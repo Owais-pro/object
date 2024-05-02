@@ -108,12 +108,12 @@ const products = [
 
 const div = document.querySelector('div');
 
-for(let i =0; i< products.length; i ++)
-{
-    let description_List = '';
-    for(let j =0; j<products[i].description.length; j++)
-    {
-        description_List += `<li>${products[i].description[j]}</li>`
-    }
+for (let i = 0; i < products.length; i++) {
     
+    div.innerHTML += `
+        <h1>NAME : ${products[i].name}</h1>
+        <h2>PRICE : ${products[i].price}</h2>
+        <p>${products[i].description}</p>
+        <hr/>
+    `;
 }
