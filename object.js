@@ -110,5 +110,10 @@ const div = document.querySelector('div');
 
 for(let i =0; i< products.length; i ++)
 {
+    let description_List = '';
+    for(let j =0; j<products[i].description.length; j++)
+    {
+        description_List += `<li>${products[i].description[j]}</li>`
+    }
     
 }
